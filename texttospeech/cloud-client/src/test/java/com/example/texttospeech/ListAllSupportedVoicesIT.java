@@ -62,7 +62,7 @@ public class ListAllSupportedVoicesIT {
     // Assert
     assertThat(voices.isEmpty()).isFalse();
     String got = bout.toString();
-    assertThat(got).contains("en-US");
+    assertThat(got).contains("ru-RU");
     assertThat(got).contains("SSML Voice Gender: MALE");
     assertThat(got).contains("SSML Voice Gender: FEMALE");
   }

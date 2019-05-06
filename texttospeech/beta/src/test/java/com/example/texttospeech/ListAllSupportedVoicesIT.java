@@ -43,7 +43,7 @@ public class ListAllSupportedVoicesIT {
   public void setUp() {
     bout = new ByteArrayOutputStream();
     out = new PrintStream(bout);
-    System.setOut(out);
+//    System.setOut(out);
     listAllSupportedVoices = new ListAllSupportedVoices();
   }
 
@@ -59,8 +59,10 @@ public class ListAllSupportedVoicesIT {
 
     // Assert
     String got = bout.toString();
-    assertThat(got).contains("en-US");
+    assertThat(got).contains("ru-RU");
     assertThat(got).contains("SSML Voice Gender: MALE");
     assertThat(got).contains("SSML Voice Gender: FEMALE");
+
+    System.out.println(got);
   }
 }

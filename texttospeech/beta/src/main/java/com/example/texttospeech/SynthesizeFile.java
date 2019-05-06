@@ -63,8 +63,9 @@ public class SynthesizeFile {
 
       // Build the voice request
       VoiceSelectionParams voice = VoiceSelectionParams.newBuilder()
-          .setLanguageCode("en-US") // languageCode = "en_us"
-          .setSsmlGender(SsmlVoiceGender.FEMALE) // ssmlVoiceGender = SsmlVoiceGender.FEMALE
+          .setName("ru-RU-Wavenet-B")
+          .setLanguageCode("ru-RU") // languageCode = "en_us"
+//          .setSsmlGender(SsmlVoiceGender.FEMALE) // ssmlVoiceGender = SsmlVoiceGender.FEMALE
           .build();
 
       // Select the type of audio file you want returned
